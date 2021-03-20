@@ -40,7 +40,7 @@ const Input = Styled.input`
  border-radius:30px;
  padding:10px 30px;
  ${(props) =>
-     props.validacion === "false" &&
+     props.validacion &&
      css`
      border:1px solid hsl(354, 100%, 66%);
      `

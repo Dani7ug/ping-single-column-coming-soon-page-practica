@@ -31,7 +31,7 @@ const App = () => {
         <Formulario className="" onSubmit={OnSubmit}>
             <div className="form-group row my-4">
           <ContInput className="col-md-9">
-          <Input type="text" className="form-control col-md-9" onChange={OnChange} value={state.campo} placeholder="your email address" validacion={errors.bool}/>
+          <Input type="text" className="form-control col-md-9" onChange={OnChange} value={state.campo} placeholder="your email address" validacion={errors.state}/>
           {errors.state && <TextError>{errors.state}</TextError>}
           </ContInput>
           <Btn className="btn btn-primary col-md-3">Notify Me</Btn>
