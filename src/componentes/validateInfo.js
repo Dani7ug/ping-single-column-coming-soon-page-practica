@@ -3,7 +3,6 @@ export default function valideInfo(state){
     let errors = {}
    if(!expresionRegular.test(state.campo)){
         errors.state = "el email no es correcto"
-        errors.bool = "false"
     }
     return errors
 }

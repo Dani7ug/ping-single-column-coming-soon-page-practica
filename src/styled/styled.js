@@ -15,6 +15,7 @@ const Img = Styled.img`
  }
 `
 const Container = Styled.div`
+font-family:'Libre Franklin', sans-serif;
 width:100%;
 height:100vh;
 display:flex;
@@ -39,6 +40,13 @@ const Input = Styled.input`
  border-radius:none;
  border-radius:30px;
  padding:10px 30px;
+ margin: 0 -15px ;
+ &::placeholder{
+     color:hsl(0, 0%, 59%);
+ }
+ @media (max-width:770px){
+     margin:0 ;
+ }
  ${(props) =>
      props.validacion &&
      css`
@@ -54,7 +62,7 @@ const ContInput = Styled.div`
 `
 const Social = Styled.div`
 @media (max-width:570px){
-    margin-top:20px;
+    margin:20px 0 20px 0;
 }
 `
 const TextError = Styled.p`
@@ -67,5 +75,12 @@ margin:0 0 0 20px;
 `
 const Title = Styled.h1`
 margin:50px 0px 20px 0;
+color:hsl(0, 0%, 59%);
 `
-export {Img,Container,Formulario,Btn,Input,ContInput,Social,TextError,Title}
+const B = Styled.b`
+color:#1a1a1a;
+`
+const Copyright = Styled.p`
+ color:hsl(0, 0%, 59%);
+`
+export {Img,Container,Formulario,Btn,Input,ContInput,Social,TextError,Title,B,Copyright}

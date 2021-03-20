@@ -4,7 +4,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faFacebookF,faTwitter,faInstagram} from "@fortawesome/free-brands-svg-icons"
 import Icon from "./images/logo.svg"
 import useForm from './componentes/useForm'
-import { Img,Container, Formulario, Btn,Input, ContInput, Social, TextError, Title } from './styled/styled'
+import { Img,Container, Formulario, Btn,Input, ContInput, Social, TextError, Title,B, Copyright } from './styled/styled'
 import validate from "./componentes/validateInfo"
 
 const App = () => {
@@ -26,7 +26,7 @@ const App = () => {
   return (
     <Container className="container text-center ">
         <img src={Icon} alt=""/>
-        <Title className="display-4">  We are launching <b>soon!</b></Title>
+        <Title className="display-4">  We are launching <B>soon!</B></Title>
         <p> Subscribe and get notified</p>
         <Formulario className="" onSubmit={OnSubmit}>
             <div className="form-group row my-4">
@@ -46,7 +46,7 @@ const App = () => {
               </a> 
           ))}
         </Social>
-        <p>&copy; Copyright Ping. All rights reserved.</p>
+        <Copyright>&copy; Copyright Ping. All rights reserved.</Copyright>
     </Container>
   )
 }
